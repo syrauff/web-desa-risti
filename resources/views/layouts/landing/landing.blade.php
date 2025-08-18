@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Desa Katialada</title>
+    <title>Desa Modelidu</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net" rel="preconnect">
@@ -43,8 +43,8 @@
     </script>
     <script>
         // Pastikan data tema sudah tersedia
-        document.documentElement.style.setProperty('--primary-color', '{{ $theme->primary ?? "#8c2626" }} ');
-        document.documentElement.style.setProperty('--secondary-color', '{{ $theme->secondary ?? "#878787" }}');
+        document.documentElement.style.setProperty('--primary-color', '{{ $theme->primary ?? '#8c2626' }} ');
+        document.documentElement.style.setProperty('--secondary-color', '{{ $theme->secondary ?? '#878787' }}');
     </script>
     @stack('after-scripts')
 </body>

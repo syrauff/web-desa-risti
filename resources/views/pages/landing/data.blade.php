@@ -2,9 +2,9 @@
     {{-- data --}}
 
     <div data-aos="zoom-in" class="mt-28 text-center">
-        <h1 class="text-darken text-2xl font-semibold ">Data Desa <span class="text-gray-600">Katialada</span></h1>
+        <h1 class="text-darken text-2xl font-semibold ">Data Desa <span class="text-gray-600">Modelidu</span></h1>
         <p class="text-gray-500 my-5 lg:px-96">
-            {{ $content->deskripsi_data_desa }} 
+            {{ $content->deskripsi_data_desa }}
         </p>
     </div>
 
@@ -13,7 +13,7 @@
             <div id="data-penduduk">
             </div>
             <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Jumlah penduduk Desa Katialada memberikan
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Jumlah penduduk Desa Modelidu memberikan
                     gambaran tentang potensi sumber daya manusia yang dapat dioptimalkan untuk pembangunan desa. Kami
                     menyediakan informasi terbaru dan akurat mengenai demografi penduduk.
                 </p>
@@ -24,7 +24,7 @@
             <div id="data-transportasi">
             </div>
             <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Infrastruktur transportasi di Desa Katialada
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Infrastruktur transportasi di Desa Modelidu
                     memainkan peran penting dalam mendukung mobilitas masyarakat dan perekonomian desa. Informasi ini
                     mencakup ketersediaan sarana transportasi serta aksesibilitas desa.
                 </p>
@@ -35,7 +35,7 @@
             <div id="data-peternakan">
             </div>
             <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Peternakan di Desa Katialada mencerminkan
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Peternakan di Desa Modelidu mencerminkan
                     potensi ekonomi yang kuat, dengan data mengenai jenis hewan ternak yang dikelola oleh warga desa.
                     Informasi ini penting untuk mendukung pengembangan sektor pertanian dan peternakan.
                 </p>
@@ -47,7 +47,7 @@
             <div id="gender-chart">
             </div>
             <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Peternakan di Desa Katialada mencerminkan
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Peternakan di Desa Modelidu mencerminkan
                     potensi ekonomi yang kuat, dengan data mengenai jenis hewan ternak yang dikelola oleh warga desa.
                     Informasi ini penting untuk mendukung pengembangan sektor pertanian dan peternakan.
                 </p>
@@ -59,7 +59,7 @@
             <div id="status-chart">
             </div>
             <div class="p-5">
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Peternakan di Desa Katialada mencerminkan
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Peternakan di Desa Modelidu mencerminkan
                     potensi ekonomi yang kuat, dengan data mengenai jenis hewan ternak yang dikelola oleh warga desa.
                     Informasi ini penting untuk mendukung pengembangan sektor pertanian dan peternakan.
                 </p>
@@ -86,7 +86,7 @@
             </div>
             <div class="p-5">
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Data mengenai kondisi rumah tangga di Desa
-                    Katialada memberikan gambaran mengenai taraf hidup masyarakat dan kualitas infrastruktur perumahan
+                    Modelidu memberikan gambaran mengenai taraf hidup masyarakat dan kualitas infrastruktur perumahan
                     yang tersedia</p>
             </div>
         </div>

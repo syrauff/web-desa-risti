@@ -123,8 +123,8 @@
             <div class="header-text">
                 <h2>Pemerintah Kabupaten Gorontalo Utara</h2>
                 <h2>Kecamatan Kwandang</h2>
-                <h2>Desa Katialada</h2>
-                <p>Jl. Pelabuhan Kwandang Desa Katialada Kecamatan Kwandang, Kode Pos 96252</p>
+                <h2>Desa Modelidu</h2>
+                <p>Jl. Pelabuhan Kwandang Desa Modelidu Kecamatan Telaga Biru, Kode Pos 96252</p>
             </div>
         </div>
         <hr>
@@ -148,7 +148,7 @@
                     <tr>
                         <td style="padding-right: 50px">Alamat</td>
                         <td>:</td>
-                        <td>Desa Katialada Kecamatan Kwandang
+                        <td>Desa Modelidu Kecamatan Telaga Biru
                             Kab. Gorontalo Utara </td>
                     </tr>
 
@@ -182,7 +182,7 @@
             </div>
             <div class="text-akhir">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bahwa nama tersebut adalah
                 benar-benar penduduk Desa
-                Katialada Kecamatan Kwandang
+                Modelidu Kecamatan Kwandang
                 Kabupaten Gorontalo Utara dan berkelakuan baik serta belum pernah tersangkut dalam suatu perkara sipil
                 maupun
                 Kriminal dan selalu melaksanakan kewajibannya pada Pemerintah maupun pada pihak lain.</div>
@@ -201,7 +201,7 @@
                     <tr>
                         <td>Dikeluarkan di</td>
                         <td>:</td>
-                        <td>Katialada</td>
+                        <td>Modelidu</td>
                     </tr>
                     <tr>
                         <td>Pada Tanggal</td>
@@ -212,13 +212,13 @@
 
                 @if ($tandatangan === 'kades')
                     <div class="text-table">
-                        <p class="kepala-desa">Kepala Desa Katialada</p>
+                        <p class="kepala-desa">Kepala Desa Modelidu</p>
                         <p class="nama-kepala-desa">{{ ucfirst($kepala_desa) }}</p>
                         {{-- <p class="nip">NIP: {{ $nip }}</p> --}}
                     </div>
                 @else
                     <div class="text-table">
-                        <p class="kepala-desa">A.n Kepala Desa Katialada</p>
+                        <p class="kepala-desa">A.n Kepala Desa Modelidu</p>
                         <p class="nama-kepala-desa">{{ ucfirst($sekretaris_desa) }}</p>
                         {{-- <p class="nip">NIP: {{ $nip }}</p> --}}
                     </div>

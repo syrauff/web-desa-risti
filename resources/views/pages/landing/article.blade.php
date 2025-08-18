@@ -1,6 +1,6 @@
 <x-landing-layout>
     <div data-aos="zoom-in" class="mt-28 text-center">
-        <h1 class="text-darken text-2xl font-semibold">Artikel Desa <span class="text-black">Katialada</span>
+        <h1 class="text-darken text-2xl font-semibold">Artikel Desa <span class="text-black">Modelidu</span>
         </h1>
         <p class="text-gray-500 my-5 lg:px-96">
             {{ $content->artikel }}

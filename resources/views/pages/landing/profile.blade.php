@@ -1,7 +1,7 @@
 <x-landing-layout>
     <!-- Profile. -->
     <div data-aos="zoom-in" class="mt-28 text-center">
-        <h1 class="text-darken text-2xl font-semibold">Sejarah Desa <span class="text-gray-500">Katialada</span></h1>
+        <h1 class="text-darken text-2xl font-semibold">Sejarah Desa <span class="text-gray-500">Modelidu</span></h1>
         <p class="text-gray-500 my-5 lg:px-96 text-justify">
             {{ $content->sejarah }}
         </p>
@@ -10,10 +10,10 @@
     <!-- Visi Misi. -->
     <div data-aos="flip-up" class="max-w-xl mx-auto text-center mt-24" id="visi-misi">
         <h1 class="font-bold text-darken my-3 text-2xl text-yellow-500">Visi Misi Desa <span
-                class="text-gray-500">Katialada</span>
+                class="text-gray-500">Modelidu</span>
         </h1>
         <p class="leading-relaxed text-gray-500">Melalui platform ini, kami juga menyampaikan visi dan misi Desa
-            Katialada, yang menjadi landasan utama dalam setiap langkah pembangunan dan pemberdayaan masyarakat. Mari
+            Modelidu, yang menjadi landasan utama dalam setiap langkah pembangunan dan pemberdayaan masyarakat. Mari
             bersama-sama mewujudkan desa yang mandiri, maju, dan sejahtera.
         </p>
     </div>
@@ -41,10 +41,10 @@
     <!-- Program Unggulan. -->
     <div data-aos="flip-up" class="max-w-xl mx-auto text-center mt-24 " id="program-unggulan">
         <h1 class="font-bold text-darken my-3 text-2xl text-yellow-500">Program Unggulan Desa <span
-                class="text-gray-500">Katialada</span>
+                class="text-gray-500">Modelidu</span>
         </h1>
         <p class="leading-relaxed text-gray-500">Melalui platform ini, kami juga menyampaikan program unggulan Desa
-            Katialada, yang menjadi fokus utama dalam meningkatkan kesejahteraan dan kualitas hidup masyarakat.
+            Modelidu, yang menjadi fokus utama dalam meningkatkan kesejahteraan dan kualitas hidup masyarakat.
             Program-program ini dirancang untuk mengoptimalkan potensi desa dan mendorong pembangunan yang
             berkelanjutan. Bersama-sama, mari kita wujudkan desa yang tangguh, inovatif, dan berdaya saing.</p>
     </div>
@@ -82,7 +82,7 @@
     @endforeach
 
     {{-- <div data-aos="zoom-in" class="mt-16 text-center">
-        <h1 class="text-darken text-2xl font-semibold mb-5">Struktur Desa <span class="text-gray-500">Katialada</span></h1>
+        <h1 class="text-darken text-2xl font-semibold mb-5">Struktur Desa <span class="text-gray-500">Modelidu</span></h1>
         <div class=" flex  justify-center">
             <img src="{{ asset('landing/images/struktur-desa.webp') }}" alt="struktur-desa" loading="lazy"
                 class="px-20" width="1000">
@@ -90,7 +90,8 @@
     </div> --}}
 
     <div data-aos="zoom-in" class="mt-16 text-center">
-        <h1 class="text-darken text-2xl font-semibold">Aparat Pemerintah Desa <span class="text-gray-500">Katialada</span>
+        <h1 class="text-darken text-2xl font-semibold">Aparat Pemerintah Desa <span
+                class="text-gray-500">Modelidu</span>
         </h1>
         <p class="text-gray-500 my-5 lg:px-96">
             {{ $content->aparat }}
@@ -142,8 +143,9 @@
 
 
     <div data-aos="zoom-in" class="mt-16 text-center">
-        <h1 class="text-darken text-2xl font-semibold">Daftar Kepala Desa <span class="text-gray-500">Katialada</span></h1>
-        <p class="text-gray-500 my-5 lg:px-96">Di bawah kepemimpinan yang visioner, Desa Katialada dipimpin oleh kepala
+        <h1 class="text-darken text-2xl font-semibold">Daftar Kepala Desa <span class="text-gray-500">Modelidu</span>
+        </h1>
+        <p class="text-gray-500 my-5 lg:px-96">Di bawah kepemimpinan yang visioner, Desa Modelidu dipimpin oleh kepala
             desa yang berkomitmen untuk membawa perubahan dan kemajuan. Berikut adalah daftar kepala desa yang telah
             memimpin desa kami:</p>
 

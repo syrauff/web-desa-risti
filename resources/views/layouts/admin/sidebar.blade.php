@@ -18,7 +18,7 @@
             <div class="grid max-w-full items-center justify-center gap-2">
                 <img class="h-auto w-32" src="{{ asset('landing/images/logo-gorut.png') }}" alt="Logo">
             </div>
-            <div class="text-center text-3xl text-white">Desa Katialada</div>
+            <div class="text-center text-3xl text-white">Desa Modelidu</div>
         </div>
 
         <ul class="space-y-2 font-medium">

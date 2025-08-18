@@ -5,7 +5,7 @@
     <div class="header-text">
         <h2>Pemerintah Kabupaten Gorontalo Utara</h2>
         <h2>Kecamatan Kwandang</h2>
-        <h2>Desa Katialada</h2>
-        <p>Jl. Pelabuhan Kwandang Desa Katialada Kecamatan Kwandang, Kode Pos 96252</p>
+        <h2>Desa Modelidu</h2>
+        <p>Jl. Pelabuhan Kwandang Desa Modelidu Kecamatan Telaga Biru, Kode Pos 96252</p>
     </div>
 </div>

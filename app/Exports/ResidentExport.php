@@ -16,13 +16,13 @@ class ResidentExport implements FromCollection, WithHeadings, WithMapping, WithC
     public function properties(): array
     {
         return [
-            'title'       => 'Data Penduduk Desa Katialada',
+            'title'       => 'Data Penduduk Desa Modelidu',
             'description' => 'Data penduduk terbaru',
             'subject'     => 'Data Penduduk',
             'keywords'    => 'penduduk,export,spreadsheet',
             'category'    => 'Data Penduduk',
             'manager'     => 'Kepala Desa',
-            'company'     => 'Desa Katialada',
+            'company'     => 'Desa Modelidu',
             'author' => 'Kepala Desa'
         ];
     }
