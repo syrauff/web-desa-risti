@@ -2,22 +2,26 @@
     <nav class="mx-auto flex max-w-6xl gap-8 px-6 transition-all duration-200 ease-in-out lg:px-12 py-3">
         <div class="relative flex items-center">
             <a href="/">
-                <img src="{{ asset('landing/images/logo-gorut.png') }}" loading="lazy" style="color:transparent"
+                <img src="{{ asset('landing/images/logo-kabgor.png') }}" loading="lazy" style="color:transparent"
                     width="32" height="32" class="transition-transform duration-200 hover:scale-105">
             </a>
         </div>
         <!-- Menu untuk Desktop -->
         <ul class="hidden items-center justify-center gap-6 md:flex">
-            <li class="pt-1.5 font-dm text-sm font-medium text-white transition-colors duration-200 hover:text-secondary">
+            <li
+                class="pt-1 font-dm text-sm font-medium text-white transition-colors duration-200 hover:text-secondary">
                 <a href="{{ route('landing.profile') }}">Profil Desa</a>
             </li>
-            <li class="pt-1.5 font-dm text-sm font-medium text-white transition-colors duration-200 hover:text-secondary">
+            <li
+                class="pt-1 font-dm text-sm font-medium text-white transition-colors duration-200 hover:text-secondary">
                 <a href="{{ route('landing.article') }}">Artikel Desa</a>
             </li>
-            <li class="pt-1.5 font-dm text-sm font-medium text-white transition-colors duration-200 hover:text-secondary">
+            <li
+                class="pt-1 font-dm text-sm font-medium text-white transition-colors duration-200 hover:text-secondary">
                 <a href="{{ route('landing.data') }}">Data Statistik Desa</a>
             </li>
-            <li class="pt-1.5 font-dm text-sm font-medium text-white transition-colors duration-200 hover:text-secondary">
+            <li
+                class="pt-1 font-dm text-sm font-medium text-white transition-colors duration-200 hover:text-secondary">
                 <a href="{{ route('documents.index') }}">Penyuratan</a>
             </li>
         </ul>
@@ -63,11 +67,11 @@
 </header>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
         const toggleButton = document.getElementById("mobile-menu-toggle");
         const mobileMenu = document.getElementById("mobile-menu");
 
-        toggleButton.addEventListener("click", function () {
+        toggleButton.addEventListener("click", function() {
             mobileMenu.classList.toggle("hidden");
         });
     });

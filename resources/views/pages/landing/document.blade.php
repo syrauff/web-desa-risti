@@ -1040,7 +1040,7 @@
                                 <label class="block text-sm font-medium text-gray-700">Di:</label>
                                 <input class="mt-1 w-full rounded-md border p-2 focus:ring focus:ring-blue-500"
                                     name="place" type="text"
-                                    placeholder="Desa Modelidu Kec. Telaga Biru, Kabupaten Gorontalo Utara" />
+                                    placeholder="Desa Modelidu Kec. Telaga Biru, Kabupaten Gorontalo" />
                             </div>
                         </div>
 

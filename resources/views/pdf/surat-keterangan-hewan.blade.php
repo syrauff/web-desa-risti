@@ -114,10 +114,10 @@
     <div class="container">
         <div class="header">
             <div class="logo">
-                <img src="../public/landing/images/logo-gorut.png">
+                <img src="../public/landing/images/logo-kabgor.png">
             </div>
-            <h2>Pemerintah Kabupaten Bonebolango</h2>
-            <h2>Kecamatan Kabila Bone</h2>
+            <h2>Pemerintah Kabupaten Gorontalo</h2>
+            <h2>Kecamatan Telaga Biru</h2>
             <h2>Desa Modelidu</h2>
             <p>Jl. Pelabuhan Kwandang Desa Modelidu Kecamatan Telaga Biru, Kode Pos 96181</p>
         </div>
@@ -198,7 +198,7 @@
 
             <div style="margin: 1px 0; @if (count($animals) >= 5) margin-top: 240px; @endif">
                 Demikian surat keterangan ini diberikan kepada yang bersangkutan pada keperluan pengurusan Rekomendasi
-                SKCK dari Polsek Bonepantai
+                SKCK dari Polsek Telaga Biru
             </div>
 
             <div class="footer">
