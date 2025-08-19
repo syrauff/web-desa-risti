@@ -34,12 +34,12 @@ class AppServiceProvider extends ServiceProvider
             }
         );
     //
-        // // Menyebarkan data tema ke semua view, jika tabel `themes` ada
-        // if (Schema::hasTable('themes')) { // Pastikan tabel `themes` ada
-        //     $theme = Theme::first(); // Ambil tema pertama dari database
-        //     View::share('theme', $theme); // Bagikan ke semua view
-        // } else {
-        //     View::share('theme', null); // Atur default ke null jika tabel tidak ada
-        // }
+        // Menyebarkan data tema ke semua view, jika tabel `themes` ada
+        if (Schema::hasTable('themes')) { // Pastikan tabel `themes` ada
+            $theme = Theme::first(); // Ambil tema pertama dari database
+            View::share('theme', $theme); // Bagikan ke semua view
+        } else {
+            View::share('theme', null); // Atur default ke null jika tabel tidak ada
+        }
     }
 }
