@@ -2,7 +2,7 @@
     <div class="max-w-lg mx-auto">
         <div class="flex py-5 justify-center text-white items-center px-20 sm:px-36">
             <div class="relative">
-                <h1 class="font-bold text-xl pr-5 relative z-50">2024</h1>
+                <h1 class="font-bold text-xl pr-5 relative z-50">2025</h1>
                 <svg class="w-11 h-11 absolute -top-2 -left-3 z-40" viewBox="0 0 79 79" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -16,7 +16,7 @@
         <div class="text-center text-white">
             <div class="py-3 tracking-wide">
                 {{-- <p>Made By <span class="font-semibold">RISTI UNG</span></p> --}}
-                <p class="font-semibold"> &copy; 2024 - RISTI UNG</p>
+                <p class="font-semibold"> &copy; 2025 - RISTI UNG</p>
             </div>
         </div>
     </div>
