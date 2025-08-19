@@ -33,7 +33,7 @@ class AppServiceProvider extends ServiceProvider
                 $view->with('content', Content::first());
             }
         );
-
+    //
         // // Menyebarkan data tema ke semua view, jika tabel `themes` ada
         // if (Schema::hasTable('themes')) { // Pastikan tabel `themes` ada
         //     $theme = Theme::first(); // Ambil tema pertama dari database
