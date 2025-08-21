@@ -106,14 +106,16 @@ class VisionMisionController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(VisionMision $visionMision)
+    public function destroy(VisionMision $visionmision)
     {
-        try {
-            $visionMision->delete();
-            return redirect()->route('admin.visionmision.index')->with('success', 'Data Visi & Misi berhasil dihapus!');
-        } catch (Exception $e) {
-            // Menangani jika data gagal dihapus (misal: karena relasi)
-            return redirect()->back()->with('error', 'Gagal menghapus data. Data mungkin terhubung dengan data lain.');
-        }
+        // Hapus data yang sudah ditemukan secara otomatis oleh Laravel.
+        $visionmision->delete();
+
+        // Untuk hapus permanen jika menggunakan SoftDeletes, gunakan:
+        // $visionmision->forceDelete();
+
+        // Redirect kembali ke halaman index dengan pesan sukses.
+        return redirect()->route('admin.vision_mision.index')
+                         ->with('success', 'Data Visi & Misi berhasil dihapus!');
     }
 }
