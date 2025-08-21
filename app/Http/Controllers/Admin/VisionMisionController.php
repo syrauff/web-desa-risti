@@ -7,6 +7,7 @@ use App\Models\VisionMision;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
+use Exception;
 
 class VisionMisionController extends Controller
 {
