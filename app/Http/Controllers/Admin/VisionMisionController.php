@@ -75,6 +75,7 @@ class VisionMisionController extends Controller
      */
     public function edit(VisionMision $visionMision)
     {
+        dd($visionMision);
         // Variabel $visionMision sudah berisi data yang dicari secara otomatis
         return view('pages.admin.vision_mision.edit', compact('visionMision'));
     }
