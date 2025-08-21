@@ -109,7 +109,7 @@ class VisionMisionController extends Controller
     {
         try {
             $visionMision->delete();
-            return redirect()->route('admin.vision-mision.index')->with('success', 'Data Visi & Misi berhasil dihapus!');
+            return redirect()->route('admin.vision_mision.index')->with('success', 'Data Visi & Misi berhasil dihapus!');
         } catch (Exception $e) {
             // Menangani jika data gagal dihapus (misal: karena relasi)
             return redirect()->back()->with('error', 'Gagal menghapus data. Data mungkin terhubung dengan data lain.');
