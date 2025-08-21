@@ -183,7 +183,7 @@
                                             </a>
 
                                             <form id="delete-form-{{ $vision_mision->slug }}" style="display: none;"
-                                                action="{{ route('admin.visionmision.destroy', ['visionmision' => $vision_mision->slug]) }}"
+                                                action="{{ route('admin.visionmision.destroy', $vision_mision) }}"
                                                 method="POST">
                                                 @csrf
                                                 @method('DELETE')
