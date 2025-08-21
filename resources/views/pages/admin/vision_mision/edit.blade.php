@@ -91,7 +91,7 @@
                 @endif
 
                 <form class="mx-auto max-w-full"
-                    action="{{ route('admin.visionmision.update', ['visionmision' => $visionMision->slug]) }}"
+                    action="{{ route('admin.visionmision.update', $visionMision) }}"
                     method="POST" enctype="multipart/form-data">
                     @method('PUT')
                     @csrf
