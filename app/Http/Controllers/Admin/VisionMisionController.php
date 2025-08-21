@@ -115,7 +115,7 @@ class VisionMisionController extends Controller
         // $visionmision->forceDelete();
 
         // Redirect kembali ke halaman index dengan pesan sukses.
-        return redirect()->route('pages.admin.vision_mision.index')
+        return redirect()->route('admin.visionmision.index')
                          ->with('success', 'Data Visi & Misi berhasil dihapus!');
     }
 }
