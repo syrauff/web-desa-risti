@@ -8,12 +8,24 @@
                     <!-- Image -->
                     {{-- <img class="block h-1/2 w-full object-contain md:h-full md:w-1/2 md:object-cover"
                         src="{{ asset('landing/images/kepala-desa.png') }}" alt="..."> --}}
-                    @if ($kepala_desa->staff_photo)
-                        <img class="block h-1/2 w-full object-contain md:h-full md:w-1/2 md:object-cover"
-                            src="{{ asset('structure/staff_profile/' . $kepala_desa->staff_photo) }}" alt="Kepala Desa">
+                    @if ($kepala_desa)
+
+                        <!-- KEDUA, setelah aman, baru cek apakah properti staff_photo punya isi -->
+                        @if ($kepala_desa->staff_photo)
+                            <!-- Jika ADA FOTO, tampilkan foto dari database -->
+                            <img class="block h-1/2 w-full object-contain md:h-full md:w-1/2 md:object-cover"
+                                src="{{ asset('storage/staff_profile/' . $kepala_desa->staff_photo) }}" alt="Foto {{ $kepala_desa->name }}">
+                        @else
+                            <!-- Jika TIDAK ADA FOTO, tampilkan placeholder -->
+                            <img class="block h-1/2 w-full object-contain md:h-full md:w-1/2 md:object-cover"
+                                src="{{ asset('images/default-avatar.png') }}" alt="Kepala Desa">
+                        @endif
+
                     @else
-                        <img class="block h-1/2 w-full object-contain md:h-full md:w-1/2 md:object-cover"
-                            src="{{ asset('structure/staff_profile/' . $kepala_desa->staff_photo) }}" alt="Kepala Desa">
+                        <!-- Opsi: Tampilkan ini jika TIDAK ADA data kepala desa sama sekali di database -->
+                        <div class="flex h-full w-full items-center justify-center bg-gray-200 md:w-1/2">
+                            <p class="text-gray-500">Data Kepala Desa tidak ditemukan.</p>
+                        </div>
                     @endif
 
 
