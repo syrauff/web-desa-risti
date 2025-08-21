@@ -8,7 +8,7 @@
                     <!-- Image -->
                     {{-- <img class="block h-1/2 w-full object-contain md:h-full md:w-1/2 md:object-cover"
                         src="{{ asset('landing/images/kepala-desa.png') }}" alt="..."> --}}
-                    @if ($kepala_desa->staff_photo == null)
+                    @if ($kepala_desa->staff_photo)
                         <img class="block h-1/2 w-full object-contain md:h-full md:w-1/2 md:object-cover"
                             src="{{ asset('structure/staff_profile/' . $kepala_desa->staff_photo) }}" alt="Kepala Desa">
                     @else
