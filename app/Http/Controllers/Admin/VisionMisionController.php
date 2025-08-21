@@ -16,6 +16,7 @@ class VisionMisionController extends Controller
     public function index(Request $request)
     {
         $search = $request->input('search');
+        $query = VisionMision::orderBy('created_at', 'DESC');
         if ($search) {
             # code...
             $vision_misions = VisionMision::where('visi', 'like', '%' . $search . '%')->orderBy('visi', 'DESC')->paginate(4)->appends(['search' => $search]);
@@ -23,6 +24,7 @@ class VisionMisionController extends Controller
 
             $vision_misions = VisionMision::orderBy('visi', 'DESC')->paginate(4); // Ganti 10 dengan jumlah item per halaman yang diinginkan
         }
+        $vision_misions = $query->paginate(10)->appends($request->query());
         return view('pages.admin.vision_mision.index', compact('vision_misions'));
     }
 
@@ -70,11 +72,10 @@ class VisionMisionController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $slug)
+    public function edit(VisionMision $visionMision)
     {
-        $vision_mision = VisionMision::where('slug', $slug)->first();
-
-        return view('pages.admin.vision_mision.edit', compact('vision_mision'));
+        // Variabel $visionMision sudah berisi data yang dicari secara otomatis
+        return view('pages.admin.vision_mision.edit', compact('visionMision'));
     }
 
     /**
@@ -104,13 +105,14 @@ class VisionMisionController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $slug)
+    public function destroy(VisionMision $visionMision)
     {
-        $vision_mision = VisionMision::where('slug', $slug)->first();
-        if (!$vision_mision) {
-            return redirect()->back()->with('error', 'Data Gagal Dihapus');
+        try {
+            $visionMision->delete();
+            return redirect()->route('admin.vision-mision.index')->with('success', 'Data Visi & Misi berhasil dihapus!');
+        } catch (Exception $e) {
+            // Menangani jika data gagal dihapus (misal: karena relasi)
+            return redirect()->back()->with('error', 'Gagal menghapus data. Data mungkin terhubung dengan data lain.');
         }
-        $vision_mision->delete();
-        return redirect()->back()->with('success', 'Data berhasil dihapus');
     }
 }
