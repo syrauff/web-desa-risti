@@ -10,4 +10,9 @@ class VisionMision extends Model
     use HasFactory;
     protected $table = 'vision_misions';
     protected $guarded = [];
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

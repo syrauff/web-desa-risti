@@ -73,11 +73,10 @@ class VisionMisionController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(VisionMision $visionMision)
+    public function edit(VisionMision $visionmision)
     {
-        dd($visionMision);
         // Variabel $visionMision sudah berisi data yang dicari secara otomatis
-        return view('pages.admin.vision_mision.edit', compact('visionMision'));
+        return view('pages.admin.vision_mision.edit', compact('visionmision'));
     }
 
     /**
