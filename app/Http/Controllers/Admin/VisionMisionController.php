@@ -44,7 +44,7 @@ class VisionMisionController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'visi' => 'required|string|max:500|min:3|unique:vision_misions',
-            'misi' => 'required|string|max:500|min:10',
+            'misi' => 'required|string|min:10',
         ]);
 
         // Jika validasi gagal, kembali dengan pesan kesalahan
