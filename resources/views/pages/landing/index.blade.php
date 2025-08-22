@@ -14,7 +14,7 @@
                         @if ($kepala_desa->staff_photo)
                             <!-- Jika ADA FOTO, tampilkan foto dari database -->
                             <img class="block h-1/2 w-full object-contain md:h-full md:w-1/2 md:object-cover"
-                                src="{{ asset('storage/staff_profile/' . $kepala_desa->staff_photo) }}" alt="Foto {{ $kepala_desa->name }}">
+                                src="{{ asset('structure/staff_profile/' . $kepala_desa->staff_photo) }}" alt="Foto {{ $kepala_desa->name }}">
                         @else
                             <!-- Jika TIDAK ADA FOTO, tampilkan placeholder -->
                             <img class="block h-1/2 w-full object-contain md:h-full md:w-1/2 md:object-cover"
@@ -450,9 +450,6 @@
     </div>
 
     <div class="flex justify-center">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7978.759985569857!2d122.90087848780126!3d0.8493064735045458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32794f76be888f7f%3A0x1a3123d14411b3b2!2sKantor%20Desa%20Modelidu!5e0!3m2!1sen!2sid!4v1734709360554!5m2!1sen!2sid"
-            style="border:0;" width="600" height="450" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20291.758897093314!2d123.05943421255498!3d0.6880934997840034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x327933e69067851f%3A0x7f1504bd004416bd!2sModelidu%20Village!5e0!3m2!1sid!2sid!4v1755838281796!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </x-landing-layout>
