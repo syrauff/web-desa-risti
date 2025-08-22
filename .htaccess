@@ -1,0 +1,27 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # ----------------------------------------------------------------------
+    # Aturan #1: Menangani file aset (CSS, JS, Gambar, dll.)
+    # ----------------------------------------------------------------------
+    # Jika file yang diminta ADA di dalam folder /public...
+    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -f
+    # ...maka langsung arahkan ke file tersebut dan berhenti.
+    RewriteRule ^(.*)$ public/$1 [L]
+
+
+    # ----------------------------------------------------------------------
+    # Aturan #2: Menangani routing halaman Laravel
+    # ----------------------------------------------------------------------
+    # Jika request BUKAN aset, lanjutkan dengan aturan di bawah ini.
+    
+    # Alihkan URL dengan garis miring di akhir (kecuali folder)
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Kirim semua request yang tersisa ke index.php
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>

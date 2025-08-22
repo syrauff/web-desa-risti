@@ -85,7 +85,7 @@
                             Surat:</label>
                         <input type="text" id="no_surat"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                            placeholder="Contoh : 145 / DU-BP / 2023 / 2023 /2024" name="no_surat"
+                            placeholder="Contoh : 145 / DU-BP / 2023 / 2023 /2025" name="no_surat"
                             value="{{ $no_surat }}" />
                         <div class="hidden">
                             <label for="type"

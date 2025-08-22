@@ -162,7 +162,7 @@
                                         <div class="flex items-center">
 
                                             <a
-                                                href="{{ route('admin.visionmision.edit', ['visionmision' => $vision_mision->slug]) }}">
+                                                href="{{ route('admin.visionmision.edit', $vision_mision) }}">
                                                 <svg class="size-6 text-yellow-500 dark:text-white" aria-hidden="true"
                                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                     fill="none" viewBox="0 0 24 24">
@@ -174,7 +174,7 @@
 
                                             </a>
                                             <a href="javascript:void(0);"
-                                                onclick="confirmDelete('{{ $vision_mision->slug }}', '{{ addslashes($vision_mision->visi) }}')">
+                                                onclick="confirmDelete('{{ $vision_mision }}', '{{ addslashes($vision_mision->visi) }}')">
                                                 <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="red">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -182,8 +182,8 @@
                                                 </svg>
                                             </a>
 
-                                            <form id="delete-form-{{ $vision_mision->slug }}" style="display: none;"
-                                                action="{{ route('admin.visionmision.destroy', ['visionmision' => $vision_mision->slug]) }}"
+                                            <form id="delete-form-{{ $vision_mision }}" style="display: none;"
+                                                action="{{ route('admin.visionmision.destroy', $vision_mision) }}"
                                                 method="POST">
                                                 @csrf
                                                 @method('DELETE')

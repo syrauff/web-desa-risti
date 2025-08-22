@@ -91,7 +91,7 @@
                 @endif
 
                 <form class="mx-auto max-w-full"
-                    action="{{ route('admin.visionmision.update', ['visionmision' => $vision_mision->slug]) }}"
+                    action="{{ route('admin.visionmision.update', $visionmision) }}"
                     method="POST" enctype="multipart/form-data">
                     @method('PUT')
                     @csrf
@@ -102,7 +102,7 @@
                             <input
                                 class="block w-full rounded-lg border border-secondary bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary focus:ring-secondary dark:border-secondary dark:bg-gray-700 dark:text-white"
                                 id="visi" name="visi" type="text"
-                                value="{{ old('visi', $vision_mision->visi) }}" placeholder="John Anderson...."
+                                value="{{ old('visi', $visionmision->visi) }}" placeholder="John Anderson...."
                                 required />
                             @error('visi')
                                 <span class="text-sm text-red-500">{{ $message }}</span>
@@ -113,7 +113,7 @@
                                 for="misi">Misi</label>
                             <textarea
                                 class="block w-full rounded-lg border border-secondary bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary focus:ring-secondary dark:border-secondary dark:bg-gray-700 dark:text-white"
-                                id="misi" name="misi" placeholder="John Anderson...." required rows="4">{{ $vision_mision->misi }}</textarea>
+                                id="misi" name="misi" placeholder="John Anderson...." required rows="4">{{ $visionmision->misi }}</textarea>
                             @error('misi')
                                 <span class="text-sm text-red-500">{{ $message }}</span>
                             @enderror

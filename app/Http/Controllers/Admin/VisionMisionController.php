@@ -7,6 +7,7 @@ use App\Models\VisionMision;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
+use Exception;
 
 class VisionMisionController extends Controller
 {
@@ -16,6 +17,7 @@ class VisionMisionController extends Controller
     public function index(Request $request)
     {
         $search = $request->input('search');
+        $query = VisionMision::orderBy('created_at', 'DESC');
         if ($search) {
             # code...
             $vision_misions = VisionMision::where('visi', 'like', '%' . $search . '%')->orderBy('visi', 'DESC')->paginate(4)->appends(['search' => $search]);
@@ -23,6 +25,7 @@ class VisionMisionController extends Controller
 
             $vision_misions = VisionMision::orderBy('visi', 'DESC')->paginate(4); // Ganti 10 dengan jumlah item per halaman yang diinginkan
         }
+        $vision_misions = $query->paginate(10)->appends($request->query());
         return view('pages.admin.vision_mision.index', compact('vision_misions'));
     }
 
@@ -41,7 +44,7 @@ class VisionMisionController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'visi' => 'required|string|max:500|min:3|unique:vision_misions',
-            'misi' => 'required|string|max:500|min:10',
+            'misi' => 'required|string|min:10',
         ]);
 
         // Jika validasi gagal, kembali dengan pesan kesalahan
@@ -70,11 +73,10 @@ class VisionMisionController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $slug)
+    public function edit(VisionMision $visionmision)
     {
-        $vision_mision = VisionMision::where('slug', $slug)->first();
-
-        return view('pages.admin.vision_mision.edit', compact('vision_mision'));
+        // Variabel $visionMision sudah berisi data yang dicari secara otomatis
+        return view('pages.admin.vision_mision.edit', compact('visionmision'));
     }
 
     /**
@@ -85,7 +87,7 @@ class VisionMisionController extends Controller
         $vision_mision = VisionMision::where('slug', $slug)->first();
         $validator = Validator::make($request->all(), [
             'visi' => 'required|string|max:500|min:3|unique:vision_misions,slug,' . $vision_mision->slug,
-            'misi' => 'required|string|max:500|min:10',
+            'misi' => 'required|string|min:10',
         ]);
 
         // Jika validasi gagal, kembali dengan pesan kesalahan
@@ -104,13 +106,16 @@ class VisionMisionController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $slug)
+    public function destroy(VisionMision $visionmision)
     {
-        $vision_mision = VisionMision::where('slug', $slug)->first();
-        if (!$vision_mision) {
-            return redirect()->back()->with('error', 'Data Gagal Dihapus');
-        }
-        $vision_mision->delete();
-        return redirect()->back()->with('success', 'Data berhasil dihapus');
+        // Hapus data yang sudah ditemukan secara otomatis oleh Laravel.
+        $visionmision->delete();
+
+        // Untuk hapus permanen jika menggunakan SoftDeletes, gunakan:
+        // $visionmision->forceDelete();
+
+        // Redirect kembali ke halaman index dengan pesan sukses.
+        return redirect()->route('admin.visionmision.index')
+                         ->with('success', 'Data Visi & Misi berhasil dihapus!');
     }
 }
