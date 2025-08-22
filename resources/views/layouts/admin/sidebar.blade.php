@@ -12,7 +12,7 @@
 
 <aside class="fixed left-0 top-0 z-40 h-screen w-64 -translate-x-full transition-transform sm:translate-x-0"
     id="sidebar-multi-level-sidebar" aria-label="Sidebar">
-    <div class="h-full overflow-y-auto bg-primary px-3 py-4 dark:bg-gray-800">
+    <div class="h-full overflow-y-auto bg-primary px-3 py-4">
         <div class="my-4 w-full">
 
             <div class="grid max-w-full items-center justify-center gap-2">
